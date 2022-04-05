@@ -1,0 +1,40 @@
+/*
+Author:      Zachary Thomas
+Created:     9/29/2021
+Modified:    11/19/2021
+
+Copyright 2021 © Cornell Pump Company, All Rights Reserved
+-----------------------------------------------------------------
+*/
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+.save-top-level-backdrop {
+  z-index: 1055 !important;
+}
+
+.save-changes-modal {
+  z-index: 2000 !important;
+
+  .modal-title {
+    font-weight: 500;
+    font-size: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      font-weight: 500;
+      font-size: 1.25rem;
+    }
+  }
+
+  .btn {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.25rem !important;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1rem !important;
+      padding: 0.5rem !important;
+    }
+  }
+}

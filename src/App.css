@@ -1,0 +1,69 @@
+/*
+Author:      Zachary Thomas
+Created:     5/14/2021
+Modified:    6/6/2021
+
+Copyright 2021 © Cornell Pump Company, All Rights Reserved
+-----------------------------------------------------------------
+*/
+
+body {
+  --primary-background: #1265b2;
+  --page-title: #212121;
+  --title: #fff;
+  --title-hover: #e5e5e5;
+  --text-active: #fff;
+  --text-inactive: #ffffffaa;
+  --text-hover: #ffffffdd;
+  --content-text: #141414;
+  --muted-text: #212121;
+  --tab-active: #1265b2;
+  --tab-inactive: #0b3e6d;
+  --tab-hover: #0F5290;
+  --background-far: #f0f3f4;
+  --background-close: #fff;
+  --background-hover: #f0f3f4;
+  --link-background-hover: #e0e8f7;
+  --border: #0000001f;
+  --border-dark: #0000003f;
+  --link: #0645AD;
+  --white: #fff;
+  --light-button-hover: #cbcfd2;
+}
+
+html, body {
+  height: 100% !important;
+  background-color: var(--background-far) !important;
+}
+
+main {
+  flex: 1 0 auto;
+  min-height: 100vh;
+}
+
+.selectable-container {
+  color: var(--link);
+}
+
+.selectable-container:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: var(--link-background-hover);
+}
+
+.font-weight-bold {
+  font-weight: 600;
+}
+
+.btn.btn-success {
+  color: #fff;
+}
+
+.btn.btn-success:hover {
+  color: #fff;
+}
+
+.btn-light:hover {
+  background-color: var(--light-button-hover) !important;
+  border-color: var(--light-button-hover) !important;
+}

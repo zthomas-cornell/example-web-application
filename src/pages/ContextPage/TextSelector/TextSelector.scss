@@ -1,0 +1,23 @@
+/*
+Author:      Zachary Thomas
+Created:     1/12/2022
+Modified:    1/12/2022
+
+Copyright 2021 © Cornell Pump Company, All Rights Reserved
+-----------------------------------------------------------------
+*/
+
+.text-selector-container {
+  background-color: var(--background-close);
+  border-color: var(--border);
+  border-width: 1px;
+  border-style: solid;
+
+  .title {
+    color: var(--title);
+    background-color: var(--primary-background);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}

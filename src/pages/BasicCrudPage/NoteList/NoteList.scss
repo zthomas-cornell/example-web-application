@@ -1,0 +1,71 @@
+/*
+Author:      Zachary Thomas
+Created:     1/6/2022
+Modified:    1/6/2022
+
+Copyright 2022 © Cornell Pump Company, All Rights Reserved
+-----------------------------------------------------------------
+*/
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+.note-list {
+  .list-header {
+    color: var(--title);
+    background-color: var(--primary-background);
+
+    .list-title {
+      font-weight: bold;
+      font-size: 1rem;
+  
+      @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .create-btn {
+      font-size: 0.75rem;
+  
+      @include media-breakpoint-up(md) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .list-body {
+    max-height: 100vh;
+    overflow-y: auto;
+    background-color: var(--background-close);
+    border-color: var(--border);
+    border-width: 2px;
+    border-style: solid;
+
+    .list-item {
+      border-color: var(--border);
+      border-width: 2px;
+      border-style: solid;
+      background-color: var(--background-close);
+    }
+
+    .selectable-container:hover {
+      cursor: pointer !important;
+      text-decoration: underline !important;
+      background-color: var(--link-background-hover) !important;
+    }
+
+    .empty-list {
+      font-size: 1rem;
+      background-color: var(--background-close);
+      border-color: var(--border);
+      border-width: 1px;
+      border-style: solid;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

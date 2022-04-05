@@ -1,0 +1,22 @@
+/*
+Author:      Zachary Thomas
+Created:     1/6/2022
+Modified:    1/6/2022
+
+Copyright 2022 © Cornell Pump Company, All Rights Reserved
+-----------------------------------------------------------------
+*/
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+.note-modal-container {
+  .btn {
+    font-size: 0.75rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1rem;
+    }
+  }
+}
